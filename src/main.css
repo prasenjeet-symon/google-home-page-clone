@@ -1,0 +1,492 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* gogole header section */
+.header {
+    padding: 10px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 86%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header>div:nth-of-type(1) {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header>div:nth-of-type(1)>div {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.header>div:nth-of-type(1)>div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header>div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+}
+
+.header>div:nth-of-type(2)>div:nth-of-type(1) {
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.header>div:nth-of-type(2)>div:nth-of-type(2) {
+    margin-right: 15px;
+}
+
+.header>div:nth-of-type(2)>div:nth-of-type(2)>img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+
+/*  google body section */
+.body {
+    padding-top: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  google logo */
+.logo_google {
+    margin: 0px 0px;
+}
+
+
+/*  google search box */
+.search_box {
+    margin: 15px 0px;
+    position: relative;
+}
+
+
+.search_box .search_icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 0px 10px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_box .voice_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_box>input {
+    padding: 15px 55px;
+    border-radius: 40px;
+    min-width: 370px;
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
+.search_box>input:hover {
+    -webkit-box-shadow: 4px 4px 8px -4px rgba(125, 125, 125, 1);
+    -moz-box-shadow: 4px 4px 8px -4px rgba(125, 125, 125, 1);
+    box-shadow: 4px 4px 8px -4px rgba(125, 125, 125, 1);
+}
+
+/*  google search buttons section */
+.buttons_holder {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.buttons_holder button {
+    padding: 10px 15px;
+    margin: 0px 10px;
+    background-color: #f2f2f2;
+    color: #5F6368;
+    outline: none;
+    border: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons_holder button:hover {
+    border: 1px solid gainsboro;
+}
+
+/* google language offers */
+.lang_holder {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+}
+
+.lang_holder>div:nth-of-type(1) {
+    margin-right: 10px;
+    color: rgb(70, 70, 70);
+}
+
+.lang_holder>div:nth-of-type(2)>span {
+    margin: 0px 5px 0px 0px;
+    color: blue;
+    cursor: pointer;
+}
+
+.lang_holder>div:nth-of-type(2)>span:hover {
+    text-decoration: underline;
+}
+
+
+/*  google footer section */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer>div:nth-of-type(1) {
+    background-color: #f2f2f2;
+    padding: 15px 35px;
+    font-size: 88%;
+    color: rgb(80, 80, 80);
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+}
+
+.footer>div:nth-of-type(2) {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 88%;
+    color: rgb(94, 94, 94);
+}
+
+.footer>div:nth-of-type(2) span {
+    margin: 0px 15px 0px 0px;
+}
+
+
+/* menu pop */
+
+.header>div:nth-of-type(2)>div:nth-of-type(1) {
+    position: relative;
+    cursor: pointer;
+}
+
+.header .menu_pop {
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    z-index: +3;
+    height: 435px;
+    width: 320px;
+    border-radius: 10px;
+    overflow-y: auto;
+    -webkit-box-shadow: -2px 3px 16px -8px rgba(125, 125, 125, 1);
+    -moz-box-shadow: -2px 3px 16px -8px rgba(125, 125, 125, 1);
+    box-shadow: -2px 3px 16px -8px rgba(125, 125, 125, 1);
+    border: 1px solid gainsboro;
+}
+
+.menu_pop::-webkit-scrollbar {
+    width: 8px;
+}
+
+.menu_pop::-webkit-scrollbar-thumb {
+    background: gainsboro;
+    border-radius: 7px;
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.menu_item:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+.menu_pop>div:nth-of-type(1),
+.menu_pop>div:nth-of-type(2) {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gainsboro;
+}
+
+.menu_item>span {
+    margin: 5px 0px;
+}
+
+.menu_item img {
+    width: 43px;
+    height: 43px;
+}
+
+.menu_pop>div:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px 15px 10px;
+}
+
+.menu_pop>div:nth-of-type(3)>button {
+    padding: 10px 15px;
+    border: 1px solid gainsboro;
+    color: rgb(0, 102, 255);
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu_pop>div:nth-of-type(3)>button:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+/* profile pop */
+.header>div:nth-of-type(2)>div:nth-of-type(2) {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile_pop {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    top: 50px;
+    width: 365px;
+    z-index: +3;
+    background-color: white;
+    border: 1px solid gainsboro;
+    -webkit-box-shadow: -2px 3px 16px -8px rgba(125, 125, 125, 1);
+    -moz-box-shadow: -2px 3px 16px -8px rgba(125, 125, 125, 1);
+    box-shadow: -2px 3px 16px -8px rgba(125, 125, 125, 1);
+    border-radius: 7px;
+}
+
+.profile_pop>div:nth-of-type(1) {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(1) {
+    position: relative;
+}
+
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(1)>div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-bottom: 10px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(1)>div>span {
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: -2px 3px 26px -4px rgba(125, 125, 125, 1);
+    -moz-box-shadow: -2px 3px 26px -4px rgba(125, 125, 125, 1);
+    box-shadow: -2px 3px 26px -4px rgba(125, 125, 125, 1);
+
+}
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(1)>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(2) {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    color: rgb(70, 70, 70);
+    margin: 5px 0px;
+}
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(3) {
+    font-size: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(117, 117, 117);
+    margin: 0px 0px 10px 0px;
+}
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(4) {
+    margin: 10px 0px;
+}
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(4)>button {
+    padding: 10px 15px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    outline: none;
+}
+
+.profile_pop>div:nth-of-type(1)>div:nth-of-type(4)>button:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.profile_pop>div:nth-of-type(2) {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+/* extra emails */
+.extra_email {
+    display: flex;
+    align-items: center;
+    padding: 15px 35px;
+}
+
+.extra_email:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.extra_email>div:nth-of-type(2) {
+    flex: 1;
+}
+
+.extra_email>div:nth-of-type(1)>img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.extra_email>div:nth-of-type(2)>div:nth-of-type(1) {
+    font-weight: 600;
+    color: rgb(85, 85, 85);
+}
+
+.extra_email>div:nth-of-type(2)>div:nth-of-type(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 87%;
+    color: rgb(95, 95, 95);
+}
+
+/*  add more account */
+.add_account {
+    display: flex;
+    padding: 15px 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add_account:hover {
+    background-color: aliceblue;
+}
+
+.add_account>div:nth-of-type(2) {
+    flex: 1;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+}
+
+.profile_pop>div:nth-of-type(3) {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_pop>div:nth-of-type(3)>button {
+    padding: 10px 15px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+    outline: none;
+}
+
+
+.profile_pop>div:nth-of-type(3)>button:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+/*  privacy policy */
+.profile_pop>div:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 85%;
+    color: rgb(116, 116, 116);
+    border-top: 1px solid gainsboro;
+    padding: 20px 0px;
+}
+
+.profile_pop>div:nth-of-type(4)>div{
+    margin-right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile_pop>div:nth-of-type(4)>div:hover{
+    background-color: aliceblue;
+    padding: 5px;
+}
